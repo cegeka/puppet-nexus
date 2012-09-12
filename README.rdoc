@@ -1,0 +1,5 @@
+= puppet-nexus module
+
+{<img src='https://codex.cegeka.be/jenkins/job/puppet-nexus/badge/icon' />}[https://codex.cegeka.be/jenkins/job/puppet-nexus/]
+
+This is the nexus module.
