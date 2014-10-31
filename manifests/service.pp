@@ -1,7 +1,11 @@
-class nexus::service {
+class nexus::service(
+  $ensure = 'running'
+){
+
+  validate_re($ensure, '^running$|^stopped$')
 
   service { 'nexus':
-    ensure     => running,
+    ensure     => $ensure,
     enable     => true,
     hasstatus  => true,
     hasrestart => true
